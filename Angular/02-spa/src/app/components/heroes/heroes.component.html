@@ -3,5 +3,5 @@
 
 <div class="card-columns">
     <!-- *ngFor="let heroe of heroes; let i = index;" -->
-    <app-heroe-targeta [heroe]="heroe" [index]="i" *ngFor="let heroe of heroes; let i = index;"></app-heroe-targeta>
+    <app-heroe-targeta (heroeSeleccionado)="verHeroe( $event )" [heroe]="heroe" [index]="i" *ngFor="let heroe of heroes; let i = index;"></app-heroe-targeta>
 </div>
