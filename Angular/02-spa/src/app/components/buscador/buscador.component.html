@@ -1,6 +1,14 @@
 <h1>Buscando: <small>{{ termino }}</small></h1>
 <hr>
 
+<div class="row animated fadeIn fast" *ngIf="heroes.length == 0">
+    <div class="col-md-12">
+        <div class="alert alert-info">
+            No existen resultados con el término: {{ termino }}
+        </div>
+    </div>
+</div>
+
 <div class="card-columns">
 
     <div class="card animate fadeIn fast" *ngFor="let heroe of heroes; let i = index;">
@@ -13,7 +21,7 @@
               Ver más...
             </button> -->
 
-            <!-- <a [routerLink]="['/heroe',i]" class="btn btn-outline-primary btn-bloc" href="#">Ver más...</a> -->
+            <a [routerLink]="['/heroe',i]" class="btn btn-outline-primary btn-bloc" href="#">Regresar</a>
         </div>
     </div>
 </div>
