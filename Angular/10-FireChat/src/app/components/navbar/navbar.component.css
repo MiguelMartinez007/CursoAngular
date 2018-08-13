@@ -1,0 +1,87 @@
+nav {
+    width: 200px;
+    background-color: #131B21;
+    height: 100%;
+    overflow: hidden;
+}
+
+nav .ventana-menu {
+    color: #818182;
+    margin-top: 15px;
+    font-size: 20px;
+    width: 100%;
+    overflow: hidden;
+    padding: 13px;
+}
+
+nav .ventana-menu span {
+    font-size: 25px;
+}
+
+nav.min .ventana-menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .ventana-menu:hover {
+    color: white;
+    cursor: pointer;
+}
+
+nav.min {
+    width: 50px;
+}
+
+nav .usuario {
+    width: 100%;
+    padding: 10px 10px 50px 10px;
+    overflow: hidden;
+}
+
+/* Con este codigo se oculta la imagen grande del usuario */
+nav.min .usuario {
+    padding: 50px 5px;
+}
+
+nav .usuario .card {
+    margin: auto;
+}
+
+nav.min .usuario .card {
+    width: 2rem !important;
+    height: 2rem !important;
+}
+
+nav.min .usuario .card img {
+    width: 5rem !important;
+}
+
+li {
+    border-radius: 0 !important;
+}
+
+ul li {
+    background-color: transparent !important;
+    color: #818182;
+    border: none;
+    padding: 1.3rem 1.25rem !important;
+}
+ul li div span {
+    margin-right: 20px;
+}
+ul li:hover {
+    background-color: #192229 !important;
+    cursor: pointer;
+}
+
+ul .seleccionado {
+    color: white !important;
+    background-color: #1F2731 !important;
+    border-left: solid 2px #007BFF;
+}
+
+ul .seleccionado:hover {
+    background-color: #1F2731 !important;
+}
