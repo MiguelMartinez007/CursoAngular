@@ -78,10 +78,10 @@ ul li:hover {
 
 ul .seleccionado {
     color: white !important;
-    background-color: #1F2731 !important;
+    background-color: #2B333D !important;
     border-left: solid 2px #007BFF;
 }
 
 ul .seleccionado:hover {
-    background-color: #1F2731 !important;
+    background-color: #2B333D !important;
 }

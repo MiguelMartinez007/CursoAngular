@@ -10,12 +10,14 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { environment } from '../environments/environment';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SubmenuComponent } from './components/submenu/submenu.component';
+import { ChatComponent } from './components/chat/chat.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    SubmenuComponent
+    SubmenuComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,

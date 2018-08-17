@@ -1,0 +1,69 @@
+.chat {
+    width: 100% !important;
+}
+
+.chat .encabezado-chat {
+    border-bottom: 1px solid #343a40 !important;
+}
+
+.chat .app-mensajes .burbuja {
+    width: 100%;
+    overflow: hidden;
+    margin: 1.5rem auto;
+}
+
+.chat .app-mensajes .burbuja .texto-bajo {
+    width: 100%;
+}
+
+.chat .app-mensajes .burbuja div .texto-bajo small {
+    width: 100%;
+    color: #475057;
+    font-size: 12px;
+    /* text-align: right; */
+    text-align: center;
+}
+
+/* .chat .app-mensajes .burbuja .yo .texto-bajo small {
+    text-align: left;
+} */
+
+.chat .app-mensajes .burbuja div {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.chat .app-mensajes .burbuja div .mensaje-datos {
+    display: flex;
+    flex-flow: column wrap;
+    width: 65%;
+    margin: auto 15px;
+}
+
+.chat .app-mensajes .burbuja div .mensaje-datos .mensaje {
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.chat .app-mensajes .burbuja .yo {
+    flex-direction: row-reverse;
+}
+
+.chat .app-mensajes .burbuja div .mensaje-datos .mensaje {
+    background-color: #35404D;
+    border-radius: 4px;
+}
+
+.chat .app-mensajes .burbuja .yo .mensaje-datos .mensaje {
+    background-color: #1F2731;
+}
+
+.chat .app-mensajes .burbuja div .mensaje-datos .mensaje p {
+    font-size: 14px;
+}
+
+.chat .app-mensajes .burbuja .yo .mensaje-datos .mensaje p {
+    width: 100%;
+    text-align: right;
+}
