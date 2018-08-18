@@ -14,4 +14,8 @@ export class AppComponent {
     this.chats = db.collection('chats').valueChanges();
   };
 
+  mensajes() {
+    return this.chats;
+  }
+
 };

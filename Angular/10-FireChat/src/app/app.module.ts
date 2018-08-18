@@ -11,13 +11,15 @@ import { environment } from '../environments/environment';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SubmenuComponent } from './components/submenu/submenu.component';
 import { ChatComponent } from './components/chat/chat.component';
+import { AppMensajesComponent } from './components/chat/app-mensajes/app-mensajes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     SubmenuComponent,
-    ChatComponent
+    ChatComponent,
+    AppMensajesComponent
   ],
   imports: [
     BrowserModule,

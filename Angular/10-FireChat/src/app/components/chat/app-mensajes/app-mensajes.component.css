@@ -1,0 +1,67 @@
+.app-mensajes {
+    /* background-color: black; */
+    overflow-y: scroll;
+    width: 100%;
+}
+
+.app-mensajes .burbuja {
+    width: 100%;
+    overflow: hidden;
+    margin: 1.5rem auto;
+}
+
+.app-mensajes .burbuja .texto-bajo {
+    width: 100%;
+}
+
+.app-mensajes .burbuja div .texto-bajo small {
+    width: 100%;
+    color: #475057;
+    font-size: 12px;
+    /* text-align: right; */
+    text-align: center;
+}
+
+/* .app-mensajes .burbuja .yo .texto-bajo small {
+    text-align: left;
+} */
+
+.app-mensajes .burbuja div {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.app-mensajes .burbuja div .mensaje-datos {
+    display: flex;
+    flex-flow: column wrap;
+    width: 65%;
+    margin: auto 15px;
+}
+
+.app-mensajes .burbuja div .mensaje-datos .mensaje {
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.app-mensajes .burbuja .yo {
+    flex-direction: row-reverse;
+}
+
+.app-mensajes .burbuja div .mensaje-datos .mensaje {
+    background-color: #35404D;
+    border-radius: 4px;
+}
+
+.app-mensajes .burbuja .yo .mensaje-datos .mensaje {
+    background-color: #1F2731;
+}
+
+.app-mensajes .burbuja div .mensaje-datos .mensaje p {
+    font-size: 14px;
+}
+
+.app-mensajes .burbuja .yo .mensaje-datos .mensaje p {
+    width: 100%;
+    text-align: right;
+}
