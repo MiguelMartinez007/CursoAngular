@@ -16,7 +16,7 @@
       </div>
   </div>
   
-  <div class="burbuja">
+  <!-- <div class="burbuja">
       <div class="">
           <div class="card" style="width: 3rem; height: 3rem; overflow: hidden; border-radius: 50%;">
               <img src="./assets/img/1.jpg" class="card-img-top" alt="" style="width: 6rem; position: relative; left: -2.5rem;">
@@ -30,6 +30,17 @@
               </div>
           </div>
       </div>
-  </div>
+  </div> -->
 
+</div>
+
+<div class="caja-chat">
+    <div class="input-group">
+        <input type="text" id="message" class="form-control" [(ngModel)]="mensaje" (keyup.enter)="enviar_mensaje()" placeholder="Enviar mensaje" />
+        <div class="input-group-append">
+            <button class="btn btn-warning">
+                <span class="icon-checkmark"></span>
+            </button>
+        </div>
+    </div>
 </div>

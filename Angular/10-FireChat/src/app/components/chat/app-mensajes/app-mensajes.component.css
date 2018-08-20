@@ -67,3 +67,32 @@
     width: 100%;
     text-align: right;
 }
+
+.caja-chat {
+    padding: 10px;
+}
+
+.caja-chat .input-group {
+    margin: auto;
+    max-width: 500px;
+}
+
+.caja-chat .input-group input {
+    background-color: #1F2731;
+    border: none;
+    color: #818182;
+}
+
+.caja-chat .input-group .input-group-append button {
+    background-color: #35404D;
+    border: none;
+    margin-left: 5px;
+}
+
+.caja-chat .input-group .input-group-append button span {
+    color: white;
+}
+
+.caja-chat .input-group .input-group-append button:hover {
+    background-color: #007BFF;
+}

@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { AppComponent } from '../../../app.component';
-import { Observable } from 'rxjs';
+// --- Codigo viejo
+// import { AppComponent } from '../../../app.component';
+// import { Observable } from 'rxjs';
+
+// --- Codigo nuevo
+import { ChatService } from "../../../providers/chat.service";
+
 
 @Component({
   selector: 'app-app-mensajes',
@@ -9,12 +14,24 @@ import { Observable } from 'rxjs';
 })
 export class AppMensajesComponent implements OnInit {
 
-  public mensajes: Observable<any[]>;
-  constructor( appComponent: AppComponent ) {
-    this.mensajes = appComponent.mensajes();
+  // --- codigo viejo
+  // public mensajes: Observable<any[]>;
+  // constructor( appComponent: AppComponent ) {
+  //   this.mensajes = appComponent.mensajes();
+  // }
+
+
+  mensaje: string = "";
+  constructor( public _cs: ChatService ){
+    
   }
 
   ngOnInit() {
+  }
+
+  enviar_mensaje(){
+    console.log(this.mensaje);
+    
   }
 
 }

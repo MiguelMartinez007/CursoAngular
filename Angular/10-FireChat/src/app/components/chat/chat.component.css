@@ -13,32 +13,3 @@
     width: 100%;
     height: 70%;
 }
-
-.chat .apartado-chat .caja-chat {
-    padding: 10px;
-}
-
-.chat .apartado-chat .caja-chat .input-group {
-    margin: auto;
-    max-width: 500px;
-}
-
-.chat .apartado-chat .caja-chat .input-group input {
-    background-color: #1F2731;
-    border: none;
-    color: #818182;
-}
-
-.chat .apartado-chat .caja-chat .input-group .input-group-append button {
-    background-color: #35404D;
-    border: none;
-    margin-left: 5px;
-}
-
-.chat .apartado-chat .caja-chat .input-group .input-group-append button span {
-    color: white;
-}
-
-.chat .apartado-chat .caja-chat .input-group .input-group-append button:hover {
-    background-color: #007BFF;
-}

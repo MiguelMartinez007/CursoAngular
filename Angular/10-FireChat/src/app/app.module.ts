@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import { FormsModule } from "@angular/forms";
+
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 // import { AngularFireStorageModule } from 'angularfire2/storage';
@@ -12,6 +14,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { SubmenuComponent } from './components/submenu/submenu.component';
 import { ChatComponent } from './components/chat/chat.component';
 import { AppMensajesComponent } from './components/chat/app-mensajes/app-mensajes.component';
+
+// servicios
+import { ChatService } from "./providers/chat.service";
 
 @NgModule({
   declarations: [
@@ -25,9 +30,12 @@ import { AppMensajesComponent } from './components/chat/app-mensajes/app-mensaje
     BrowserModule,
     AngularFireModule.initializeApp( environment.firebase ),
     AngularFirestoreModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    ChatService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
