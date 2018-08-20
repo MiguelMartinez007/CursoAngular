@@ -1,0 +1,70 @@
+/* Estilos para la animación del login */
+.polymorph {
+    fill: #007BFF;
+}
+
+#cta,
+#cta2 {
+    position: absolute;
+    margin: 10em auto 0 auto;
+    left: 0;
+    right: 0;
+    width: 30%;
+    background: none;
+    border: 1px solid #192229;
+    border-radius: 5px;
+    padding: 15px;
+    color: #192229;
+    font-size: 1.5em;
+    cursor: pointer;
+    outline: 0;
+    transition: all .15s ease-in-out;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+#cta2 {
+    width: auto;
+    margin: 30px auto;
+    background: #007BFF;
+    border: none;
+}
+
+#cta2:hover {
+    background: #fff;
+    color: #007BFF;
+}
+
+
+/* #cta:hover {
+    background: #fff;
+    color: #b73090;
+    border: 1px solid #b73090;
+} */
+
+#blip {
+    position: absolute;
+    color: #007BFF;
+    right: 25%;
+    top: 0;
+    opacity: 0;
+    width: 30%;
+    transform: translateY(-800px);
+}
+
+/* Estilos para el formulario */
+form, form .entrada, form .entrada input {
+    width: 100%;
+    overflow: hidden;
+}
+
+form .entrada input {
+    margin-top: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(0,123,255,.25);
+    padding: 5px;
+    color: #dae0e5;
+}
