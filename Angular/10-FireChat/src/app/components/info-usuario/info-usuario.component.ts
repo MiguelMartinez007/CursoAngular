@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InfoUsuarioComponent implements OnInit {
 
+  estado: string = "oculto";
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  ocultar() {
+    if( this.estado == "" ) {
+      this.estado = "oculto";
+    }else {
+      this.estado = "";
+    }
   }
 
 }
