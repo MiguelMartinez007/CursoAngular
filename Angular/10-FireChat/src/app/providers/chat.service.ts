@@ -16,7 +16,7 @@ export class ChatService {
 
   // Este es el metodo que debolvera los valores del chat
   vargarMensajes() {
-    this.itemsCollection = this.afs.collection<Mensaje>('chats', ref => ref.orderBy('fecha','desc').limit(5));
+    this.itemsCollection = this.afs.collection<Mensaje>('chats', ref => ref.orderBy('fecha','desc').limit(10));
     return this.itemsCollection.valueChanges();
   }
 
@@ -26,7 +26,8 @@ export class ChatService {
     let mensaje: Mensaje = {
       nombre: 'Demo',
       mensaje: texto,
-      fecha: new Date().getTime()
+      fecha: new Date().getTime(),
+      fechabaja: 'Enviado ' + new Date().getHours() + ':' + new Date().getMinutes() + ' ' + new Date().getDay() + ' de ' + new Date().getMonth() + ' ' + new Date().getFullYear()
     }
 
     this.itemsCollection.add( mensaje );

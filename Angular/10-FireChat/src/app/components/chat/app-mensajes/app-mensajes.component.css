@@ -68,13 +68,15 @@
     text-align: right;
 }
 
+/* Estilos de la caja de chat */
+
 .caja-chat {
     padding: 10px;
 }
 
 .caja-chat .input-group {
     margin: auto;
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .caja-chat .input-group input {

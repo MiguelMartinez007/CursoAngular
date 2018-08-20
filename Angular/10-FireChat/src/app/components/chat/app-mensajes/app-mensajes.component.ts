@@ -24,14 +24,24 @@ export class AppMensajesComponent implements OnInit {
 
   public chats:Mensaje[] = [];
   mensaje: string = "";
+  elemento: any;
+
   constructor( public _cs: ChatService ){
     this._cs.vargarMensajes().subscribe( (mensajes:any[])=> {
       console.log(mensajes);
-      this.chats = mensajes;
+      this.chats = [];
+      for( let msj of mensajes ) {
+        this.chats.unshift( msj );
+      }
+
+      setTimeout(() => {
+        this.elemento.scrollTop = this.elemento.scrollHeight;
+      }, 20);
     })
   }
 
   ngOnInit() {
+    this.elemento = document.getElementById('app-mensajes');
   }
 
   enviar_mensaje(){

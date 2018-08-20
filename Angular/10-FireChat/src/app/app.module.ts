@@ -17,6 +17,7 @@ import { AppMensajesComponent } from './components/chat/app-mensajes/app-mensaje
 
 // servicios
 import { ChatService } from "./providers/chat.service";
+import { InfoUsuarioComponent } from './components/info-usuario/info-usuario.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ChatService } from "./providers/chat.service";
     NavbarComponent,
     SubmenuComponent,
     ChatComponent,
-    AppMensajesComponent
+    AppMensajesComponent,
+    InfoUsuarioComponent
   ],
   imports: [
     BrowserModule,
