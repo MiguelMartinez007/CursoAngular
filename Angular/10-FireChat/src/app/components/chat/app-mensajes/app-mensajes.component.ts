@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
 
 // --- Codigo nuevo
 import { ChatService } from "../../../providers/chat.service";
+import { Mensaje } from "../../../interface/mensaje.interface";
 
 
 @Component({
@@ -21,9 +22,13 @@ export class AppMensajesComponent implements OnInit {
   // }
 
 
+  public chats:Mensaje[] = [];
   mensaje: string = "";
   constructor( public _cs: ChatService ){
-    
+    this._cs.vargarMensajes().subscribe( (mensajes:any[])=> {
+      console.log(mensajes);
+      this.chats = mensajes;
+    })
   }
 
   ngOnInit() {
@@ -32,6 +37,12 @@ export class AppMensajesComponent implements OnInit {
   enviar_mensaje(){
     console.log(this.mensaje);
     
+    if( this.mensaje.length === 0 ) {
+      return;
+    }
+
+    this._cs.agregarMensajes( this.mensaje );
+    this.mensaje = "";
   }
 
 }
