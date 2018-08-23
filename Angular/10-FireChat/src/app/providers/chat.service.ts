@@ -50,7 +50,8 @@ export class ChatService {
   agregarMensajes( texto: string ) {
     // Falta el uid del usuario
     let mensaje: Mensaje = {
-      nombre: 'Demo',
+      uid: this.usuario.uid,
+      nombre: this.usuario.nombre,
       mensaje: texto,
       fecha: new Date().getTime(),
       fechabaja: 'Enviado ' + new Date().getHours() + ':' + new Date().getMinutes() + ' ' + new Date().getDay() + ' de ' + new Date().getMonth() + ' ' + new Date().getFullYear()
