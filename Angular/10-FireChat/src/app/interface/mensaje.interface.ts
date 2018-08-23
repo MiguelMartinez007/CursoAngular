@@ -4,4 +4,5 @@ export interface Mensaje {
     fecha?: number;
     uid?: string;
     fechabaja?:string;
+    photoURL?:string;
 }

@@ -55,7 +55,8 @@ nav.min .usuario .card {
 }
 
 nav.min .usuario .card img {
-    width: 5rem !important;
+    width: 2rem !important;
+    left: 0 !important;
 }
 
 li {
