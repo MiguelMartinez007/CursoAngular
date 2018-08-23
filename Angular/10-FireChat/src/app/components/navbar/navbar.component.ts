@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ChatService } from "../../providers/chat.service";
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -11,7 +13,7 @@ export class NavbarComponent implements OnInit {
     estado: 'min'
   }
 
-  constructor() { }
+  constructor( public _cs: ChatService ) { }
 
   ngOnInit() {
   }

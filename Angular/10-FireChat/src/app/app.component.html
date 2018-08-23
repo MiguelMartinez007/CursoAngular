@@ -4,11 +4,11 @@
   </li>
 </ul> -->
 
-<app-login-registro></app-login-registro>
+<app-login-registro *ngIf="!_cs.usuario.uid"></app-login-registro>
 
-<!-- <div class="contenedor-aplicacion">
+<div class="contenedor-aplicacion" *ngIf="_cs.usuario.uid">
     <app-navbar></app-navbar>
     <app-submenu style="width: 100%; max-width: 300px;"></app-submenu>
     <app-chat style="width: 100%;"></app-chat>
     <app-info-usuario></app-info-usuario>
-</div> -->
+</div>

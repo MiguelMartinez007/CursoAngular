@@ -10,10 +10,15 @@
           <h1>Acceso y registro</h1>
           <small>Si no tienes cuenta, solo basta con acceder con correo y contraseña y se creara tu cuenta.</small>
           <div class="entrada">
-            <input type="text" id="e-mail" name="e-mail">
-            <input type="password" id="pass" name="pass">
+            <input type="text" id="e-mail" name="e-mail" placeholder="Correo: correo@outlook.com">
+            <input type="password" id="pass" name="pass" placeholder="Contraseña: 1234">
           </div>
         </form>
         <button id="cta2">Acceder</button>
+        <div class="redes">
+          <small>Acceder con: </small>
+          <button class="btn btn-primary" (click)="ingresar('Twitter')">Twitter</button>
+          <button class="btn btn-danger" (click)="ingresar('Google')">Google</button>
+        </div>
     </div>
 </div>

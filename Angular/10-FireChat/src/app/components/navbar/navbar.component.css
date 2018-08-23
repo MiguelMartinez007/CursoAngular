@@ -85,3 +85,7 @@ ul .seleccionado {
 ul .seleccionado:hover {
     background-color: #2B333D !important;
 }
+
+.btn-outline-danger:hover {
+    background-color: transparent !important;
+}

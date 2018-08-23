@@ -33,7 +33,7 @@ p {
 }
 
 #cta2:hover {
-    background: #fff;
+    background: #dae0e5;
     color: #007BFF;
 }
 
@@ -67,4 +67,17 @@ form .entrada input {
     background-color: rgba(0,123,255,.25);
     padding: 5px;
     color: #dae0e5;
+}
+
+.redes {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    overflow: hidden;
+    align-items: center;
+    margin: 2em auto 0 auto;
+}
+
+.redes button {
+    margin: 5px;
 }
