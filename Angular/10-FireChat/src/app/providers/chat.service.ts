@@ -54,7 +54,8 @@ export class ChatService {
       nombre: this.usuario.nombre,
       mensaje: texto,
       fecha: new Date().getTime(),
-      fechabaja: 'Enviado ' + new Date().getHours() + ':' + new Date().getMinutes() + ' ' + new Date().getDay() + ' de ' + new Date().getMonth() + ' ' + new Date().getFullYear()
+      fechabaja: 'Enviado ' + new Date().getHours() + ':' + new Date().getMinutes() + ' ' + new Date().getDay() + ' de ' + new Date().getMonth() + ' ' + new Date().getFullYear(),
+      photoURL: this.usuario.photoURL
     }
 
     this.itemsCollection.add( mensaje );
